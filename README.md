@@ -26,19 +26,17 @@ The missing values are filled using the mean of the respective columns. The age 
 ## Model Creation
 A Sequential model is created with the following layers:
 
-- Dense layer with 64 units and ReLU activation function
-- Dropout layer with 0.2 rate
-- Dense layer with 64 units and ReLU activation function
-- Dropout layer with 0.2 rate
+- Dense layer with 6 units and ReLU activation function
+- Dense layer with 6 units and ReLU activation function
 - Dense layer with 1 unit and sigmoid activation function
 
 The optimizer used is Adam and binary cross-entropy is used as the loss function. The accuracy is used as the metric.
 
 ## Model Training
-The model is trained with 100 epochs and a batch size of 32. The training data is split into 80:20 for training and validation data.
+The model is trained with 50 epochs.
 
 ## Model Evaluation
 The model is evaluated on the validation data using the evaluate function. The model is also evaluated on the test data and the predictions are saved in a CSV file.
 
 ## Conclusion
-This Jupyter Notebook provides a complete solution to the Spaceship Titanic Kaggle Competition. It achieves an accuracy of 84% on the validation data and 78% on the test data.
+This Jupyter Notebook provides a complete solution to the Spaceship Titanic Kaggle Competition. It achieves an accuracy of 74% on the validation data.
